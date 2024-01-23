@@ -17,5 +17,6 @@ public class PlayerInputController : fixTownCharacterController
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(newAim);
 
         newAim = (worldPos - (Vector2)transform.position).normalized;
+        CallLookEvent(newAim);
     }
 }
